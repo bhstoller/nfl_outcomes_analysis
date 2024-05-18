@@ -337,6 +337,16 @@ While the SMOTE version of the random forest did minorly decrease the count of l
   <img src="Figures/figure_22.png" title="Test Set Classification Report: SMOTE Random Forest">
 </p>
 The dual axis graph above further encapsulates the increased predictive success of the random forest with SMOTE. Specifically, the average of the precision, recall, and F1-scores for all three classes improved by enhancing the data with SMOTE. The most extreme improvement is, of course, with the high performing athletes as there are now instances where they are identified correctly. However, as seen by the heatmap, the classification scores for the average performers improved substantially as well. While the classification may not be ideal for each class, the model's overall accuracy (66%) is not only higher than the base version, but is free from most class imbalance pollution. As such, with the given data available, this SMOTE random forest model represents somewhat of a ceiling of predictiveness.
+</p>
+With the most refined version of the model with the highest model, the following figures closes the analysis by determining the features with the most importance. The following dual-axis chart depicts the Mean Decrease in Impurity (MDI) and Mean Decrease in Accuracy (MDA) for each of the top five features used in the SMOTE random forest model.
+</p>
+<p align="center">
+  <img src="Figures/figure_23.png" title="SMOTE Random Forest: Top Five Features by MDI and MDA Importance">
+</p>
+When analyzing attributes of a machine learning model, the MDI measures a feature's importance based on how much it enhances the model's overall decision-making by reducing impurity. Similarly, the MDA evaluates a feature's impact on the model's overall accuracy when the feature's values are randomly shuffled. A high MDA indicates that a model heavily relies on the feature for accurate predictions, as randomizing its results would cause a substantial drop in overall performance.
+As seen in the above chart, 'pre-draft-grade' emerges as the as the most significant feature, displaying the highest MDI and second-highest MDA importance. Together, these indicate that the 'pre-draft grade' feature, which is a grade assigned to each athlete by ESPN analysts before the draft, not only substantially reduces the models impurity, but also best preserves its accuracy. While 'z_pre_draft_position_ranking' records a lower MDI, it stands out with the highest MDA, confirming its vital role in maintaining model accuracy when the values are shuffled. Lastly, the features 'overall', 'overall_cubed', and 'z_pre_draft_ranking' show moderate importance in both MDI and MDA, and thereby only contribute to the model's performance to a lesser extent.
+</p>
+Ultimately, this chart demonstrates that the pre-draft grade and z-score of the pre-draft position ranking (both determined by ESPN analysts) are the primary drivers behind this random forest's accuracy, making them key factors in the ability to predict whether wide receiver prospects will become a low, average, or high performer.
 
 ## Statistical Flaws:
 While I took all the precautions possible to ensure the statistical purity of this project, there exist four statistical flaws present in my analysis. These include sample bias, class imbalance, arbitrary outcomes, and skewed data.
