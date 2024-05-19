@@ -17,7 +17,7 @@ The most successful model, the SMOTE-enhanced random forest, achieved an overall
 <p align="center">
   <img src="Figures/figure_24.png" title="Random Forest Classification Report Comparison">
 </p>
-As shown, the SMOTE-enhanced model demonstrated improved precision, recall, and F1-scores across each class, particularly for the high performing athletes, which the base random forest model failed to correctly classify. 
+As shown, the SMOTE-enhanced model demonstrated improved precision, recall, and F1-scores across each class, particularly for the high performing athletes, which the base random forest model failed to correctly classify at all. 
 </p>
 Regarding the key drivers, the following figure anlyzes the model's top five features by their Mean Decrease in Impurity (MDI) and Mean Decrease in Accuracy (MDA).
 </p>
