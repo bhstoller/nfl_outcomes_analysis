@@ -12,7 +12,7 @@ After plotting the correlation between the sum of athletes' z-scores across the 
 Given the combination of sample bias from the open-source APIs inability to capture the entire population of wide recievers during the sourced timeframe, along with the class imbalances stemming from the limited number of high-performing players, I applied Synthetic Minority Oversampling Technqiue (SMOTE) to enhance the data. By synthetically generating samples of the minority classes, SMOTE helped improve the overall accuracy of the model by handling the class imbalance more effectively than the base versions of the respective models.
 
 ## Results
-The most successful model, the SMOTE-enhanced random forest, achieved an overall accuracy of 66%, with the two primary predictors being ESPN's pre-draft grade and positional ranking. Enhancing the data with SMOTE significantly improved the model's performance by addressing the class imbalances. Below are the classification reports of the random forests with and without the SMOTE enhancement.
+The most successful model, the SMOTE-enhanced random forest, achieved an overall accuracy of 66%, with the two primary predictors being ESPN's pre-draft grade and positional ranking. Enhancing the data with SMOTE significantly improved the model's performance over the base version since it addressed the data's class imbalances. Below are the classification reports of the random forests with and without the SMOTE enhancement.
 </p>
 <p align="center">
   <img src="Figures/figure_24.png" title="Random Forest Classification Report Comparison">
