@@ -32,7 +32,7 @@ While the models I created indicate that there are in fact certain college footb
 Additionally, by using SMOTE to address the severe class imbalance present in the data, I introduced assumptions of independence between the synthetic samples and my original data. If these assumptions did not hold in actuality, it could have caused overfitting of the features and biased the model's overall accuracy.
 
 ## Conclusion and Future Work
-Overall, this project estalishes a comprehensive baseline for predicting NFL success from data on college and draft statistics. Both using a larger, more representative sample in addition to increasing the model's sophistication to incorporate more complex factors such as mental stamina could significantly improve the model moving forward. Together, these two enhancements would mitigate the existing statistical caveats and integrate more qualitative relationship into the conclusions, which would ultimatley increase the overall accuracy.
+Overall, this project estalishes a comprehensive baseline for predicting NFL success from data on college and draft statistics. In the future, both using a larger, more representative sample in addition to increasing the model's sophistication to incorporate more complex factors such as mental stamina could significantly improve the model moving forward. Together, these two enhancements would mitigate the existing statistical caveats and integrate more qualitative relationship into the conclusions, which would ultimatley increase the overall accuracy.
 
 ## Call to Action
 Explore the full report [here], which expands on the above analysis and provides a more detailed documentation my decisions.
