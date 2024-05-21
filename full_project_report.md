@@ -172,7 +172,7 @@ The following figure is a dual-axis graph of the naive baseline model's classifi
   <img src="Figures/figure_11.png" title="Test Set Classification Metrics and Support: Naive Baseline Model">
 </p>
 A window into how performance disparities intersect with class instance distribution, this figure provides a more detailed depiction of the model's accuracy. As expected, the most frequent class of low performing athletes had the strongest precision, recall, and F1-scores. However, the overall performance of class 2 in a vacuum still falls short of industry standard thresholds for an accurate model. In stark contrast, the precision, recall, and F1-scores for class 1 (high performers) significantly underperformed both compared to the other classes and in isolation. As with the confusion matrix, the insights from this chart are emblematic of the necessity for a more sophisticated model that can manage the present class imbalance stemming from the larger pool of low performers more effectively.
-
+</p>
 The naive baseline's results are crucial since it provides a foundation to compare against with more advanced models. If those more advanced approaches do not perform significantly better than this baseline, it would indicate their ineffectiveness at learning from the data.
 
 ### Base Model Implementations
