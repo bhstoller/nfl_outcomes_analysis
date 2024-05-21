@@ -132,28 +132,28 @@ The insights from this figure further confirm the stark difference in performanc
 Overall, the analysis of the scatterplots and boxplots confirm the validity of partitioning NFL wide receivers into three performance clusters. Thus, with a clear definition of success, I could begin to utilize more advanced machine learning models.
 
 ## Feature Engineering:
-Bolstered by a stronger and more-nuanced understanding of the data, I commenced with feature engineering, which consisted two steps: feature ideation and feature analysis. In the feature ideation stage, I applied feature engineering best practices to create a comprehensive set of attributes available to a future machine learning model. Then, in the feature analysis stage, I compared that set of features against the clusters to assess impact.
+Bolstered by a stronger and more-nuanced understanding of the data, I commenced with feature engineering, which consisted of two main steps: feature ideation and feature analysis. In the feature ideation stage, I applied feature engineering best practices to create a comprehensive set of attributes available to a future machine learning model. Then, in the feature analysis stage, I compared that set of features against the clusters to assess an initial impact.
 
 ### Feature Ideation
-Before deploying a machine learning model to predict NFL success, I prioritized feature engineering to enrich the aggregate dataset with a diverse set of features that could aid in a model's learning potential. Specifically, I added three main categories of features: interactive, polynomial, and one-hot encoded.
+Before deploying a machine learning model to predict NFL success, I prioritized feature ideation to enrich the aggregate dataset with a diverse set of features that could aid in a model's learning potential. Specifically, I added three main categories of features: interactive, polynomial, and one-hot encoded.
 
-<ins>Interactive Features:</ins> Leveraging my prior football domain knowledge, I added features that would attempt to capture more complex interactions among existing attributes in the aggregate dataset including:
+<ins>Interactive Features:</ins> Leveraging my prior football knowledge, I added features that would attempt to capture more complex interactions among existing attributes in the aggregate dataset including:
 - Physical Attributes: Given the importance of height and weight in evaluating draft prospects, I added an interaction between these two attributes.
-- Performance Metrics: To capture player scoring potential and usage, I developed interactions of receiving yards with touchdowns and receptions with touchdowns.
+- Performance Metrics: To capture player scoring potential and usage, I developed interactions between receiving yards and touchdowns and receptions with touchdowns.
 - Draft Attributes: To provide a more multi-dimensional analysis of each athlete's draft context, I created interactions between each player's pre-draft grade, draft round, and overall draft pick.
 </p>
 
 <ins>Polynomial Features:</ins> To incorporate any potential non-linear relationships between existing attributes, I expanded the feature set to include polynomial transformations of the primary draft attributes. Specifically, this includes both squared and cubed versions of each player's draft round and overall draft pick.
 
-<ins>Encoded Features:</ins> Lastly, in order to further capture the importance height and weight as draft prospect attributes, I implemented one-hot encoding to categorize players into bins based on the z-score of each athlete's height and weight. One-hot encoding enabled me to transform static physical measurements into categorical features, enhancing a model's predictive engine.
+<ins>Encoded Features:</ins> Lastly, in order to further capture the importance height and weight as draft prospect attributes, I implemented one-hot encoding to categorize players into bins based on the z-score of each athlete's height and weight. One-hot encoding enabled me to transform static physical measurements into categorical features, thereby enhancing a model's predictive engine.
 
 ### Feature Analysis
-With a robust and diverse set of 26 features available, I took an initial gauge of their strength and relevancy against the NFL player clusters. To accomplish this, I developed a feature heatmap shown in the figure below.
+With a robust and diverse set of 26 features available, I then took an initial gauge of their strength and relevancy against the NFL player clusters. To accomplish this, I developed a feature heatmap shown in the figure below.
 </p>
 <p align="center">
   <img src="Figures/figure_9.png" title="Correlation Heatmap between NFL Clusters and Dataset Features">
 </p>
-As is the case for expansive feature sets such as this, there is a wide range of correlations between the set and the NFL clusters. From this heatmap, it is evident that the certain draft features, such as pre-draft grade, draft round, and overall draft pick (as well a their polynomial counterparts) exhibit a high degree of correlation against the cluster. This suggests that they potentially have the most influence in predicting NFL outcomes among college receivers, and would therefore be important to include in machine learning models. While the heatmap indicates that these features have the highest predictive impact likelihood in terms of correlation, it does not mean that they would certainly be included in a model's optimal feature set. Similarly, it does not mean that other of the features would not be included either.
+As is the case for expansive feature sets such as this, there is a wide range of correlations between the attribute set and the NFL clusters. From this heatmap, it is evident that the certain draft features, such as pre-draft grade, draft round, and overall draft pick (as well a their polynomial counterparts) exhibit a high degree of correlation against the cluster. This suggests that they will potentially have the most influence in predicting NFL outcomes, and would therefore be important to include in my machine learning models. However, this correlation alone does not mean that they would certainly be influential to training a machine learning model. Similarly, it does not mean that any of the other features would not be relevant to include either.
 
 ## Predictive Modeling and Analysis:
 With a comprehensive and robust baseline understanding of both the data and feature set, I could begin deploying a machine learning model to predict NFL wide receiver outcomes.
