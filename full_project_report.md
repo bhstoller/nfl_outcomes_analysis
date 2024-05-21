@@ -137,7 +137,7 @@ Bolstered by a stronger and more-nuanced understanding of the data, I commenced 
 ### Feature Ideation
 Before deploying a machine learning model to predict NFL success, I prioritized feature engineering to enrich the aggregate dataset with a diverse set of features that could aid in a model's learning potential. Specifically, I added three main categories of features: interactive, polynomial, and one-hot encoded.
 
-<u>Interactive Features:</u> Leveraging my prior football domain knowledge, I added features that would attempt to capture more complex interactions among existing attributes in the aggregate dataset including:
+<ins>Interactive Features:</ins> Leveraging my prior football domain knowledge, I added features that would attempt to capture more complex interactions among existing attributes in the aggregate dataset including:
 - Physical Attributes: Given the importance of height and weight in evaluating draft prospects, I added an interaction between these two attributes.
 - Performance Metrics: To capture player scoring potential and usage, I developed interactions of receiving yards with touchdowns and receptions with touchdowns.
 - Draft Attributes: To provide a more multi-dimensional analysis of each athlete's draft context, I created interactions between each player's pre-draft grade, draft round, and overall draft pick.
@@ -145,7 +145,7 @@ Before deploying a machine learning model to predict NFL success, I prioritized 
 
 <ins>Polynomial Features:</ins> To incorporate any potential non-linear relationships between existing attributes, I expanded the feature set to include polynomial transformations of the primary draft attributes. Specifically, this includes both squared and cubed versions of each player's draft round and overall draft pick.
 
-<u>Encoded Features:</u> Lastly, in order to further capture the importance height and weight as draft prospect attributes, I implemented one-hot encoding to categorize players into bins based on the z-score of each athlete's height and weight. One-hot encoding enabled me to transform static physical measurements into categorical features, enhancing a model's predictive engine.
+<ins>Encoded Features:</ins> Lastly, in order to further capture the importance height and weight as draft prospect attributes, I implemented one-hot encoding to categorize players into bins based on the z-score of each athlete's height and weight. One-hot encoding enabled me to transform static physical measurements into categorical features, enhancing a model's predictive engine.
 
 ### Feature Analysis
 With a robust and diverse set of 26 features available, I took an initial gauge of their strength and relevancy against the NFL player clusters. To accomplish this, I developed a feature heatmap shown in the figure below.
