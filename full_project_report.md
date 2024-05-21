@@ -165,7 +165,7 @@ To set a benchmark performance against more advanced machine learning methods, I
   <img src="Figures/figure_10.png" title="Test Set Confusion Matrix: Naive Baseline Model">
 </p>
 As expected, this heatmap correctly identifies low-performing players in class 2 (the most common class), but struggles to accurately classify average and high performing athletes. Thus, this heatmap reveals a skew towards class 2 (low performer) predictions, thereby impacting the overall accuracy. Specifically, while the matrix shows that class 2 has the highest number of correct predictions (instances of class 2 correctly classified as class 2), classes 0 and 1 were also often incorrectly classified as class 2. Furthermore, class 0 was only identified correctly 10 times while being misclassified as class 2 in 17 other instances. In an even worse case, class 1 was only identified correctly twice. 
-
+</p>
 The following figure is a dual-axis graph of the naive baseline model's classification report, which depicts the precision, recall, and F1-scores for each class alongside the number of instances (support).
 </p>
 <p align="center">
