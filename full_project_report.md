@@ -115,7 +115,7 @@ To confirm the validity of the K-Means suggested grouping and analyze the within
 <p align="center">
   <img src="Figures/figure_7a.png" title="K-Means Cluster Principal Component Analysis">
 </p>
-Looking at the PCA, I found that the most seperation exists within the class of the high performers (cluster 1). While they do not fully overlap, the PCA plot does show that the low and average performers somewhat blend together at the boundaries of their respective performance groupings. To explore this further, the figure below offers a two-dimensional depiction by charting scatterplots of performance by cluster for each pairing combination among the included metrics. Within each of the scatterplots, the athlete data points are color coded according to their cluster and the centroid stars indicate the average values within those respective clusters.
+Looking at the PCA, it is seen that the class of high performers (cluster 1) exhibits the most separation amongst the three groupings. While they do not fully overlap, the PCA plot does show that the low and average performers somewhat blend together at the boundaries of their respective performance groupings. To explore this further, the figure below offers a two-dimensional depiction by charting scatterplots of performance by cluster for each pairing combination among the included metrics. Within each of the scatterplots, the athlete data points are color coded according to their cluster and the centroid stars indicate the average values within those respective clusters.
 </p>
 <p align="center">
   <img src="Figures/figure_7b.png" title="Multivariate Cluster Analysis of NFL Performance Metrics">
