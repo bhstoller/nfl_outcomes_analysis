@@ -99,7 +99,7 @@ From the figure, it is clear that there do not exist any apparent quadratic or c
 Ultimately, the linear, quadratic, and cubic relationship analyses from the two figures above indicate that a meaningful amount of variation in NFL success cannot be explained by only a linear or polynomial relationship. While the first figure suggests that there is some linear relationship between CFB and NFL wide receiver performance as is represented by their composite scores, a linear regression will fail to capture a wide degree of the variation in success. Similarly, the low R² values for the quadratic and cubic fits further reveal that other factors beyond CFB and NFL performance across these four metrics will likely have significant impacts on wide receiver performance. Thus, more complex machine learning models are necessary to effectively predict performance in the NFL.
 
 ## Adjusted Success Cutoff Analysis:
-Given that more complex machine learning approaches, such as decision tree and random forest models, require a more binary outcome for success rather than only a quantitative metric, I aimed to find a new method of defining success.
+Given that more complex machine learning approaches, such as decision tree and random forest models, require a more binary outcome for success rather than only a quantitative correlation, I aimed to find a new method of defining success.
 
 ### K-Means Clustering Implementation
 To achieve this, I performed a K-Means clustering analysis of the career-level NFL data to reveal any natural groupings of player performance. The figure below shows an elbow chart that I used to determine the optimal 'K', or optimal clusters within the data.
@@ -115,7 +115,7 @@ To confirm the validity of this K-Means suggested grouping and analyze the withi
 <p align="center">
   <img src="Figures/figure_7a.png" title="K-Means Cluster Principal Component Analysis">
 </p>
-Looking at the PCA, it is seen that the class of high performers (cluster 1) exhibits the most separation amongst the three groupings. While they do not fully overlap, the PCA plot does show that the low and average performers somewhat blend together at the boundaries of their respective performance groupings. To explore this further, the figure below offers a two-dimensional depiction by charting scatterplots of performance by cluster for each combination of the included metrics. Within each of the scatterplots, the athlete data points are color coded according to their cluster, and the centroid stars indicate the average values within those respective clusters.
+Looking at the PCA, it is seen that the class of high performers (cluster 1) exhibits the most separation amongst the three groupings. While they do not fully overlap, the PCA plot does show that the low and average performers (clusters 0 and 2) somewhat blend together at the boundaries of their respective performance groupings. To explore this further, the figure below offers a different two-dimensional depiction by charting scatterplots of performance by cluster for each combination of the included metrics. Within each of the scatterplots, the athlete data points are color coded according to their cluster, and the centroid stars indicate the average values within those respective clusters.
 </p>
 <p align="center">
   <img src="Figures/figure_7b.png" title="Multivariate Cluster Analysis of NFL Performance Metrics">
@@ -144,8 +144,9 @@ Before deploying a machine learning model to predict NFL success, I prioritized 
 </p>
 
 <ins>Polynomial Features:</ins> To incorporate any potential non-linear relationships between existing attributes, I expanded the feature set to include polynomial transformations of the primary draft attributes. Specifically, this includes both squared and cubed versions of each player's draft round and overall draft pick.
+</p>
 
-<ins>Encoded Features:</ins> Lastly, in order to further capture the importance height and weight as draft prospect attributes, I implemented one-hot encoding to categorize players into bins based on the z-score of each athlete's height and weight. One-hot encoding enabled me to transform static physical measurements into categorical features, thereby enhancing a model's predictive engine.
+<ins>Encoded Features:</ins> Lastly, in order to further capture the importance of height and weight as draft prospect attributes, I implemented one-hot encoding to categorize players into bins based on the z-score of each athlete's height and weight. One-hot encoding enabled me to transform static physical measurements into categorical features, thereby enhancing a model's predictive engine.
 
 ### Feature Analysis
 With a robust and diverse set of 26 features available, I then took an initial gauge of their strength and relevancy against the NFL player clusters. To accomplish this, I developed a feature heatmap shown in the figure below.
@@ -153,7 +154,7 @@ With a robust and diverse set of 26 features available, I then took an initial g
 <p align="center">
   <img src="Figures/figure_9.png" title="Correlation Heatmap between NFL Clusters and Dataset Features">
 </p>
-As is the case for expansive feature sets such as this, there is a wide range of correlations between the attribute set and the NFL clusters. From this heatmap, it is evident that the certain draft features, such as pre-draft grade, draft round, and overall draft pick (as well a their polynomial counterparts) exhibit a high degree of correlation against the cluster. This suggests that they will potentially have the most influence in predicting NFL outcomes, and would therefore be important to include in my machine learning models. However, this correlation alone does not mean that they would certainly be influential to training a machine learning model. Similarly, it does not mean that any of the other features would not be relevant to include either.
+As is the case for expansive feature sets such as this, there is a wide range of correlations between the attribute set and the NFL clusters. From this heatmap, it is evident that the certain draft features, such as pre-draft grade, draft round, and overall draft pick (as well a their polynomial counterparts) exhibit a high degree of correlation against the cluster. This suggests that they will potentially have the most influence in predicting NFL outcomes, and would therefore be important to include in future machine learning models. However, this correlation alone does not mean that they would definitely be influential in training a machine learning model. Similarly, it does not mean that any of the other features would not be valuable to include either.
 
 ## Predictive Modeling and Analysis:
 With a comprehensive and robust baseline understanding of both the data and feature set, I could begin deploying a machine learning model to predict NFL wide receiver outcomes.
