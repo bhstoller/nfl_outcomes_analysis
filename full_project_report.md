@@ -398,3 +398,5 @@ However, despite my best attempts at developing a model free from any statistica
 While merely obtaining a more robust dataset that is more representative of the actual population of wide receivers could improve the performance of the existingly-developed models in this notebook, future analyses can take this research even further with a representative dataset that also captures more comprehensive athlete profiles. 
 </p>
 Thus, this project highlights the importance of data collection and underscores the importance of addressing statistical challenges to enhance the robustness and accuracy of predictive insights in sports analytics.
+</p>
+Please contact me at bhs.stoller@gmail.com to learn more. 
