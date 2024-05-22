@@ -24,7 +24,7 @@ Regarding the key drivers, the following figure anlyzes the model's top five fea
 <p align="center">
   <img src="Figures/figure_23.png" title="SMOTE Random Forest: Top Five Features by MDI and MDA Importance">
 </p>
-As depicted in the above chart, **ESPN's pre-draft grade** and **positional ranking** are the features with the highest combined MDI and MDA in my model, suggesting that they are interestingly accurate predictors of wide receiver success in the NFL.
+As depicted in the above chart, __ESPN's pre-draft grade__ and __positional ranking__ are the features with the highest combined MDI and MDA in my model, suggesting that they are interestingly accurate predictors of wide receiver success in the NFL.
 
 ## Discussion
 While the models I created indicate that there are in fact certain college football metrics and draft information that can predict NFL success, my results and conclusions are subject to statistical caveats including a limited generalizability and assumptions introduced from using using SMOTE. Given that the initial data I sourced did not capture the entire population and that I also later filtered out any college athletes who did not perform well enough to be drafted, my insights and predictions from the model may not fully apply to the performance of all wide receivers.
