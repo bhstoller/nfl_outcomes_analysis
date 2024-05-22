@@ -37,4 +37,5 @@ Overall, this project estalishes a comprehensive baseline for predicting NFL suc
 ## Learn More
 Explore the full report [here](full_project_report.md), which expands on the above analysis and provides a more detailed documentation my decisions.
 </p>
+
 Please contact me at bhs.stoller@gmail.com for more information.
