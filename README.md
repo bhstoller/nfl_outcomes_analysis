@@ -34,7 +34,7 @@ Additionally, by using SMOTE to address the severe class imbalance present in th
 ## Conclusion and Future Work
 Overall, this project estalishes a comprehensive baseline for predicting NFL success from data on college and draft statistics. In the future, both using a larger, more representative sample in addition to increasing the model's sophistication to incorporate more complex factors such as mental stamina could significantly improve the model moving forward. Together, these two enhancements would mitigate the existing statistical caveats and integrate more qualitative relationships into the conclusions, ultimatley increasing the overall accuracy.
 
-## Call to Action
+## Learn More
 Explore the full report [here](full_project_report.md), which expands on the above analysis and provides a more detailed documentation my decisions.
 </p>
 Please contact me at bhs.stoller@gmail.com for more information.
