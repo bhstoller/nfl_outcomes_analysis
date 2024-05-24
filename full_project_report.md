@@ -180,9 +180,9 @@ The naive baseline's results are crucial since it provides a foundation to compa
 As more legitimate and sophisticated machine learning models, I next used decision tree and random forests to attempt accurately predicting the outcomes of NFL wide receivers, or more specifically, the class of each athlete. Before deploying them, I optimized each model with both a Recursive Feature Elimination with Cross-Validation (RFECV) and hyperparameter tuning analysis. These consist of the following: 
 </p>
 
-<u>RFECV:</u> Recursive Feature Elimination with Cross-Validation (RFECV), is a method used to identify the best features to use in a model based on their contribution to predictive accuracy. To do this, it combines two techniques: Recursive Feature Elimination (RFE), which systematically removes less helpful features, and Cross-Validation (CV), which iteratively records model performance with each unique subset of features. 
+<ins>RFECV:</ins> Recursive Feature Elimination with Cross-Validation (RFECV), is a method used to identify the best features to use in a model based on their contribution to predictive accuracy. To do this, it combines two techniques: Recursive Feature Elimination (RFE), which systematically removes less helpful features, and Cross-Validation (CV), which iteratively records model performance with each unique subset of features. 
 
-<u>Hyperparameter Tuning:</u> Similarly, Grid Search is a technique that also uses CV to systematically test different combinations of hyperparameters (model settings) to find the setting values that yield the highest accuracy. 
+<ins>Hyperparameter Tuning:</ins> Similarly, Grid Search is a technique that also uses CV to systematically test different combinations of hyperparameters (model settings) to find the setting values that yield the highest accuracy. 
 
 Together, RFECV and hyperparameter tuning output the best feature set and hyperparameters, thereby constructing the most optimal model version of the model.
 
