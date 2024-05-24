@@ -342,9 +342,12 @@ While the SMOTE version of the random forest did minorly decrease the count of l
 <p align="center">
   <img src="Figures/figure_22.png" title="Test Set Classification Report: SMOTE Random Forest">
 </p>
-The dual axis graph above further encapsulates the increased predictive success of the random forest with SMOTE. Specifically, the average of the precision, recall, and F1-scores for all three classes improved after enhancing the data with SMOTE. The most extreme improvement is, of course, with the high performing athletes as there are now instances where they are identified correctly. However, as seen by the heatmap, the classification scores for the average performers improved substantially as well. While the classification may not be ideal for each class, the model's overall accuracy (66%) is not only higher than the base version, but is free from most class imbalance pollution. As such, with the given data available, this SMOTE random forest model represents somewhat of a ceiling of predictiveness.
+The dual axis graph above further encapsulates the increased predictive success of the random forest with SMOTE. Specifically, the average of the precision, recall, and F1-scores for all three classes improved after enhancing the data with SMOTE. The most extreme improvement is, of course, with the high performing athletes as there are now instances where they are identified correctly. However, as seen by the heatmap, the classification scores for the average performers improved substantially as well. While the classification may not be ideal for each class, the model's overall accuracy (66%) is not only higher than the base version, but is free from most class imbalance pollution. As such, with the given data available, this SMOTE random forest model represents somewhat of a ceiling of predictiveness. The improvement in the overall accuracy with SMOTE can be seen from the below side by side comparison of the SMOTE random forest against the base version.
 </p>
-With the most refined version of the model with the highest accuracy, the following figures closes the analysis by determining the features with the most importance. The following dual-axis chart depicts the Mean Decrease in Impurity (MDI) and Mean Decrease in Accuracy (MDA) for each of the top five features used in the SMOTE random forest model.
+<p align="center">
+  <img src="Figures/figure_24.png" title="SMOTE Random Forest vs Base Random Forest Classification Report Comparison">
+</p>
+With the most refined version of the model with the highest accuracy, the following figure closes the analysis by determining the features with the most importance. The following dual-axis chart depicts the Mean Decrease in Impurity (MDI) and Mean Decrease in Accuracy (MDA) for each of the top five features used in the SMOTE random forest model.
 </p>
 <p align="center">
   <img src="Figures/figure_23.png" title="SMOTE Random Forest: Top Five Features by MDI and MDA Importance">
