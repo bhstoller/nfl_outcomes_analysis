@@ -356,7 +356,7 @@ When analyzing attributes of a machine learning model, the MDI measures a featur
 </p>
 As seen in the above chart, 'pre-draft-grade' emerged as the as the most significant feature, displaying the highest MDI and second-highest MDA importance. Together, these indicate that the 'pre-draft grade' feature, which is a grade assigned to each athlete by ESPN analysts before the draft, not only substantially reduces the models impurity, but also best preserves its accuracy. While 'z_pre_draft_position_ranking' records a lower MDI, it stands out with the highest MDA, confirming its vital role in maintaining model accuracy when the values are shuffled. Lastly, the features 'overall', 'overall_cubed', and 'z_pre_draft_ranking' show moderate importance in both MDI and MDA, and thereby only contribute to the model's performance to a lesser extent.
 </p>
-Ultimately, this chart demonstrates that the pre-draft grade and z-score of the pre-draft position ranking (both determined by ESPN analysts) are the primary drivers behind this random forest's accuracy, making them key factors in the ability to predict whether wide receiver prospects will become a low, average, or high performer.
+Ultimately, this chart demonstrates that the pre-draft grade and z-score of the pre-draft position ranking (both determined by ESPN analysts) are the primary drivers behind this random forest's accuracy, making them key influencers in whether wide receiver prospects will become a low, average, or high performer in the NFL.
 
 ## Statistical Caveats:
 While I took all the precautions possible to ensure the statistical purity of this project, there exist four statistical flaws present in my analysis. These include sample bias, class imbalance, arbitrary outcomes, and skewed data.
