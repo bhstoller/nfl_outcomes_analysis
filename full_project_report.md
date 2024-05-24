@@ -146,7 +146,7 @@ Before deploying a machine learning model to predict NFL success, I prioritized 
 <ins>Polynomial Features:</ins> To incorporate any potential non-linear relationships between existing attributes, I expanded the feature set to include polynomial transformations of the primary draft attributes. Specifically, this includes both squared and cubed versions of each player's draft round and overall draft pick.
 </p>
 
-<ins>Encoded Features:</ins> Lastly, in order to further capture the importance of height and weight as draft prospect attributes, I implemented one-hot encoding to categorize players into bins based on the z-score of each athlete's height and weight. One-hot encoding enabled me to transform static physical measurements into categorical features, thereby enhancing a model's predictive engine.
+<ins>Encoded Features:</ins> Lastly, in order to further capture the importance of height and weight as draft prospect attributes, I implemented one-hot encoding to categorize players into bins based on the z-score of their respective height and weights. One-hot encoding enabled me to transform static physical measurements into categorical features, thereby enhancing a model's predictive engine.
 
 ### Feature Analysis
 With a robust and diverse set of 26 features available, I then took an initial gauge of their strength and relevancy against the NFL player clusters. To accomplish this, I developed a feature heatmap shown in the figure below.
