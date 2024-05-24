@@ -25,7 +25,7 @@ My project hypothesis was that College Football (CFB) yearly player statistics a
   - [SMOTE Model Implementations](#smote-model-implementations)
     - [Decision Tree](#decision-tree-1)
     - [Random Forest](#random-forest-1)
-- [Statistical Caveats](#statistical-flaws)
+- [Statistical Caveats](#statistical-caveats)
   - [Sample Bias](#sample-bias)
   - [Class Imbalance](#class-imbalance)
   - [Arbitrary Outcomes](#arbitrary-outcomes)
