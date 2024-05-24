@@ -122,7 +122,7 @@ Looking at the PCA, it is seen that the class of high performers (cluster 1) exh
 </p>
 In terms of the metric relationships, the scatterplot in the top left reveals a strong, positive correlation, which is grounded by the fact that athletes who record more receptions generally also yield more receiving yards. Similarly, the scatterplot in the bottom left, reveals a moderate, positive correlation between receptions and touchdowns. Although athletes with more receptions generally also score more touchdowns, the clustering delineates a few exceptions, such as in the bottom left scatterplot, which highlights the variation in NFL performance. In contrast, the scatterplots that include average yard per reception (top right, bottom center, and bottom right) suggest the existence of non-linear relationships. If these relationships are in fact non-linear, it could suggest the presence of athletes with different team roles or playing styles.
 </p>
-To further explore the within-cluster performance in a similar manner to the initial exploratory data analysis, the following boxplots further compare performance across the three main football metrics for each grouping.
+To further explore the within-cluster performance in a similar manner to the initial exploratory data analysis, the following boxplots compare performance across the three main football metrics for each grouping.
 </p>
 <p align="center">
   <img src="Figures/figure_8.png" title="Boxplot Analysis Performance by Cluster Across Key Metrics">
