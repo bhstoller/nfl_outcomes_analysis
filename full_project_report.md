@@ -206,7 +206,7 @@ Beginning with the results from the RFECV analysis, the following figure plots t
 | overall_cubed             | Cube of overall draft pick number                             |
 | grade_height_interaction  | Interaction between athlete pre-draft grade and z-score height|
 
-As seen from the RFECV plot, only 8 of the 26 total features were found to be included in the optimal subset. When examining these eight features, it is unsurprising that the key metrics (yards, receptions, and touchdowns) are well represented. Similarly, this set of attributes are also among the features with the highest correlation in the cluster heatmap. With the optimal features subset now determined, the following table outlines the optimal parameters outlined by the Grid Search hyperparameter tuning.
+As seen from the RFECV plot, only 8 of the 26 total features were found to be included in the optimal subset. When examining these eight features, it is unsurprising that the key metrics (yards, receptions, and touchdowns) are well represented. Similarly, this set of attributes are also among the features with the highest correlation from the cluster heatmap. With the optimal features subset now determined, the following table outlines the optimal parameters outlined by the Grid Search hyperparameter tuning.
 </p>
 
 | Parameter           | Provided Value Range   | Optimal Parameter Value|
@@ -215,7 +215,7 @@ As seen from the RFECV plot, only 8 of the 26 total features were found to be in
 | min_samples_leaf    | [2, 3, 4, 5]           | 3                      |
 | min_samples_split   | [2, 3, 4]              | 2                      |
 
-No armed with the optimal feature subset and parameter values, I could deploy a decision tree model. The following figure depicts the heatmap of the test set confusion matrix from the base decision tree model using the above features and hyperparameters.
+Now armed with the optimal feature subset and parameter values, I could deploy a decision tree model. The following figure depicts the heatmap of the test set confusion matrix from the base decision tree model using the above features and hyperparameters.
 </p>
 <p align="center">
   <img src="Figures/figure_13.png" title="Test Set Confusion Matrix: Base Decision Tree">
