@@ -62,7 +62,7 @@ When comparing these figures to the member colleges within each conference and t
 Furthermore, seven of the ten states (Texas, Florida, Georgia, Alabama, South Carolina, Louisiana, and Tennessee) with the highest number of draft picks contain a SEC college. Given that each of the ten schools with the most draft picks, except Notre Dame, are public universities, it is plausible that a meaningful number of athletes attended the college in their home state. If true, this would explain the observed correlation between states and college conference as it relates to the total number of draft picks. 
 
 ### Draft Pick Analysis Across Rounds by College Team, College Conference, and State
-The three figures below take this analysis one step further, now examining insights at the round level. Specifically, they detail the number of draft picks by round for the top eight colleges, five conferences, and five states, respectively.
+The three figures below take this draft analysis one step further, now examining insights at the round level. Specifically, they detail the number of draft picks by round for the top eight colleges, five conferences, and five states, respectively.
 <p align="center">
   <img src="Figures/figure_3a.png", title="Count of Draft Picks by College Team">
   <img src="Figures/figure_3b.png", title="Count of Draft Picks by College Conference">
