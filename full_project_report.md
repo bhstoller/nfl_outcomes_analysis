@@ -89,7 +89,7 @@ With both a CFB and NFL composite score for each athlete, I was able to appropri
 </p>
 As evidenced by the positive slope of 0.23 seen in the figure legend, there exists a weak, positive correlation between CFB and NFL composite scores. While this correlation coefficient does indicate that higher NFL composite scores generally coincide with higher CFB composite scores, this relationship is fairly modest. This is further demonstrated by the non-linear shape of the scatterplot, where the data points exhibit a wide degree of dispersion, indicating that there is considerable variability between the CFB and NFL composite scores.
 </p>
-Given this weak linear relationship, I further examined whether a polynomial (quadratic or cubic) relationship might better describe the data. The figure below shows the same scatterplot of the CFB and NFL composite scores, but with quadratic and cubic lines of best fit overlaid to highlight any polynomial relationship present between the two variables.
+Given this weak linear relationship, I further examined whether a polynomial (quadratic or cubic) relationship might better describe the data. The figure below shows the same scatterplot of the CFB and NFL composite scores, but with quadratic and cubic lines of best fit overlaid to highlight any potential polynomial relationships present between the two variables.
 </p>
 <p align="center">
   <img src="Figures/figure_5.png" title="Polynomial Scatterplot Relationships between CFB and NFL Composite Scores">
