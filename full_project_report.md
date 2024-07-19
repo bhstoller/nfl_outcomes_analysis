@@ -403,4 +403,7 @@ While merely obtaining a more robust dataset that is more representative of the 
 Thus, this project highlights the importance of data collection and underscores the importance of addressing statistical challenges to enhance the robustness and accuracy of predictive insights in sports analytics.
 </p>
 
+## Learn More
+Read my published article on Data Driven Investor, ["Machine Learning and Sports: Data Science’s Best Example of a Class Imbalance"](https://medium.com/datadriveninvestor/machine-learning-and-sports-data-sciences-best-example-of-a-class-imbalance-d3e2685a518e), where I showcase the need to use data science techniques to address class imbalances in sports analytics for athlete evaluation and prediction.
+
 Please contact me at bhs.stoller@gmail.com to learn more. 
