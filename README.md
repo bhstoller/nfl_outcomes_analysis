@@ -3,6 +3,8 @@
 ## Introduction and Executive Summary
 In this project, I strived to predict the success of NFL wide receivers based on data from their college football careers and draft outcomes. Collecting data from two open-source APIs for the years 2004-2023, I achieved this goal by developing multiple decision tree and random forest models, which I further calibrated with RFECV to optimize the features used and SMOTE to handle the severe class imbalance. Ultimately, the SMOTE-enhanced random forest model achieved the highest accuracy, with a 66% success rate in predicting whether a wide receiver would become a low, average, or high performer in the NFL. Behind this, ESPN's annual pre-draft grade and wide receiver positional rankings emerged as the primary drivers behind the model's predictive accuracy. However, the various models I created were subject to a few statistical caveats including class imbalance and sample bias. Together, these underscore the importance of addressing statistical challenges in order to increase predictive accuracy in analytics.
 
+For more insights on addressing class imbalances in sports analytics, refer to my [published article](https://www.datadriveninvestor.com/2024/06/06/machine-learning-and-sports-data-sciences-best-example-of-a-class-imbalance/) on Data Driven Investor.
+
 ## Data Collection and Processing
 Using CFBD and NFL-data-py, two open-source APIs, I collected three comprehensive datasets consisting of college football, NFL, and draft statistics between 2004-2023, where I focused on the wide receiver positon due to its comparitevely greater abundance of data. I then cleaned, standardized, and ultimately merged the three datasets into one aggregate source using a name-year identifier that I created for each athlete, since the two independent APIs did not share a common ID.
 
@@ -35,7 +37,7 @@ Additionally, by using SMOTE to address the severe class imbalance present in th
 Overall, this project estalishes a comprehensive baseline for predicting NFL success from data on college and draft statistics. In the future, both using a larger, more representative sample in addition to increasing the model's sophistication to incorporate more complex factors such as mental stamina could significantly improve the model moving forward. Together, these two enhancements would mitigate the existing statistical caveats and integrate more qualitative relationships into the conclusions, ultimately increasing the overall accuracy.
 
 ## Learn More
-Read my published article on Data Driven Investor, ["Machine Learning and Sports: Data Science’s Best Example of a Class Imbalance"](https://medium.com/datadriveninvestor/machine-learning-and-sports-data-sciences-best-example-of-a-class-imbalance-d3e2685a518e), where I showcase the need to use data science techniques to address class imbalances in sports analytics for athlete evaluation and prediction.
+Read my published article on Data Driven Investor, ["Machine Learning and Sports: Data Science’s Best Example of a Class Imbalance"](https://www.datadriveninvestor.com/2024/06/06/machine-learning-and-sports-data-sciences-best-example-of-a-class-imbalance/), where I showcase the need to use data science techniques to address class imbalances in sports analytics for athlete evaluation and prediction.
 
 Additionally, explore the [full report here](full_project_report.md), which expands on the above analysis and provides a more detailed documentation my decisions.
 </p>
