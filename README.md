@@ -35,7 +35,8 @@ Additionally, by using SMOTE to address the severe class imbalance present in th
 Overall, this project estalishes a comprehensive baseline for predicting NFL success from data on college and draft statistics. In the future, both using a larger, more representative sample in addition to increasing the model's sophistication to incorporate more complex factors such as mental stamina could significantly improve the model moving forward. Together, these two enhancements would mitigate the existing statistical caveats and integrate more qualitative relationships into the conclusions, ultimately increasing the overall accuracy.
 
 ## Learn More
+Read my published article on Data Driven Investor where I discuss the application of data science techniques to address class imbalances in sports analytics for athlete evaluation and prediction: [Addressing Class Imbalances in Sports Analytics](https://medium.com/datadriveninvestor/machine-learning-and-sports-data-sciences-best-example-of-a-class-imbalance-d3e2685a518e).
+</p>
 Explore the full report [here](full_project_report.md), which expands on the above analysis and provides a more detailed documentation my decisions.
 </p>
-
 Please contact me at bhs.stoller@gmail.com for more information.
