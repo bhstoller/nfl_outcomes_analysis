@@ -37,6 +37,6 @@ Overall, this project estalishes a comprehensive baseline for predicting NFL suc
 ## Learn More
 Read my published article on Data Driven Investor, ["Machine Learning and Sports: Data Science’s Best Example of a Class Imbalance"](https://medium.com/datadriveninvestor/machine-learning-and-sports-data-sciences-best-example-of-a-class-imbalance-d3e2685a518e), where I showcase the need to use data science techniques to address class imbalances in sports analytics for athlete evaluation and prediction.
 
-Additionally, explore the full report [here](full_project_report.md), which expands on the above analysis and provides a more detailed documentation my decisions.
+Additionally, explore the [full report here](full_project_report.md), which expands on the above analysis and provides a more detailed documentation my decisions.
 </p>
 Please contact me at bhs.stoller@gmail.com for more information.
